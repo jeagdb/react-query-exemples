@@ -1,5 +1,5 @@
 {
-  "name": "react-query-exemple",
+  "name": "react-query-exemples",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +11,7 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "eslint-plugin-standard": "^5.0.0",
+    "json-server": "0.17.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-intersection-observer": "^9.0.0",
@@ -25,7 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "db": "./node_modules/.bin/json-server --watch ./json-server/db.json --port 3004 --id key"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +49,8 @@
   },
   "devDependencies": {
     "eslint": "^7.29.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-config-standard": "^16.0.3",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.23.4",
